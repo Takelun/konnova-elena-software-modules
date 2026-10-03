@@ -1,4 +1,4 @@
-﻿class Program
+class Program
 {
     static void Main()
     {
@@ -14,6 +14,5 @@
 
         Console.WriteLine($"Среднее арифметическое A = {A:F4}");
         Console.WriteLine($"Среднее геометрическое G = {G:F4}");
-        Console.ReadKey();
     }
 }
