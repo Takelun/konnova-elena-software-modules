@@ -1,0 +1,26 @@
+﻿using System;
+class Program
+{
+    static void Main()
+    {
+        Console.Write("a1 = ");
+        double a1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("a2 = ");
+        double a2 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("b1 = ");
+        double b1 = Convert.ToDouble(Console.ReadLine());
+        Console.Write("b2 = ");
+        double b2 = Convert.ToDouble(Console.ReadLine());
+
+        double scalarProduct = a1 * b1 + a2 * b2;
+        double bLengthSq = b1 * b1 + b2 * b2;
+
+        double k = scalarProduct / bLengthSq;
+        double p1 = k * b1;
+        double p2 = k * b2;
+
+
+        Console.WriteLine($"Коэффициент проекции k = {k:F4}");
+        Console.WriteLine($"Вектор проекции p = ({p1:F4}; {p2:F4})");
+    }
+}

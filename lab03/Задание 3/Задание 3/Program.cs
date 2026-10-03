@@ -1,0 +1,18 @@
+﻿class Program
+{
+    static void Main()
+    {
+        Console.Write("N = ");
+        double N = Convert.ToDouble(Console.ReadLine());
+        Console.Write("T = ");
+        double T = Convert.ToDouble(Console.ReadLine());
+        Console.Write("S = ");
+        double S = Convert.ToDouble(Console.ReadLine());
+
+        double total = N * T;
+        double speed = total / S;
+
+        Console.WriteLine($"Обработанные токены: {total:F0}");
+        Console.WriteLine($"Скорость обработки: {speed:F4} токенов/сек");
+    }
+}
