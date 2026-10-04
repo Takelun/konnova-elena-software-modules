@@ -1,0 +1,31 @@
+class Program
+{
+    static void Main()
+    {
+        Console.Write("x = ");
+        double x = Convert.ToDouble(Console.ReadLine());
+        Console.Write("y = ");
+        double y = Convert.ToDouble(Console.ReadLine());
+
+        if (x > 0 && y > 0)
+        {
+            Console.WriteLine("Точка находится в 1-м квадранте.");
+        }
+        else if (x < 0 && y > 0)
+        {
+            Console.WriteLine("Точка находится во 2-м квадранте.");
+        }
+        else if (x < 0 && y < 0)
+        {
+            Console.WriteLine("Точка находится в 3-м квадранте.");
+        }
+        else if (x > 0 && y < 0)
+        {
+            Console.WriteLine("Точка находится в 4-м квадранте.");
+        }
+        else
+        {
+            Console.WriteLine("Точка находится на оси координат или в начале отсчета.");
+        }
+    }
+}

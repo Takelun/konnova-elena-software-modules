@@ -1,0 +1,29 @@
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите оценку: ");
+        char grade = Convert.ToChar(Console.ReadLine().ToUpper());
+        switch (grade)
+        {
+            case 'A':
+                Console.WriteLine("Описание: Отлично");
+                break;
+            case 'B':
+                Console.WriteLine("Описание: Хорошо");
+                break;
+            case 'C':
+                Console.WriteLine("Описание: Удовлетворительно");
+                break;
+            case 'D':
+                Console.WriteLine("Описание: Плохо");
+                break;
+            case 'F':
+                Console.WriteLine("Описание: Неудовлетворительно");
+                break;
+            default:
+                Console.WriteLine("Некорректная оценка.");
+                break;
+        }
+    }
+}

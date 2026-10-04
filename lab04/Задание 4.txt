@@ -1,0 +1,19 @@
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Введите уровень заряда (0-100): ");
+        int battery = Convert.ToInt32(Console.ReadLine());
+
+        string status = battery switch
+        {
+            0 => "Разряжен",
+            >= 1 and <= 20 => "Низкий заряд",
+            >= 21 and <= 80 => "Нормальный заряд",
+            >= 81 and <= 99 => "Высокий заряд",
+            100 => "Полностью заряжен",
+            _ => "Недопустимое значение"
+        };
+        Console.WriteLine($"Состояние аккумулятора: {status}");
+    }
+}

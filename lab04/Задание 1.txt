@@ -1,0 +1,14 @@
+class Program
+{
+    static void Main()
+    {
+        Console.Write("a = ");
+        double a = Convert.ToDouble(Console.ReadLine());
+        Console.Write("b = ");
+        double b = Convert.ToDouble(Console.ReadLine());
+
+        double maxAbsNumber = Math.Abs(a) > Math.Abs(b) ? a : b;
+
+        Console.WriteLine($"Число с большим абсолютным значением: {maxAbsNumber}");
+    }
+}
